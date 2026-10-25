@@ -7,6 +7,8 @@
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f6f8fa; }
         .container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; max-width: 500px; line-height: 1.6; }
         h1 { color: #24292e; }
+        .qr-code { margin: 20px auto; }
+        .qr-code img { max-width: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 10px; }
         .wallet-address { background-color: #e8f0fe; padding: 15px; border: 1px solid #cce0ff; border-radius: 5px; font-family: monospace; font-size: 16px; margin: 20px 0; word-break: break-all; color: #0366d6; }
         .warning { color: #d73a49; font-weight: bold; margin-top: 20px; font-size: 14px; }
     </style>
@@ -14,7 +16,11 @@
 <body>
     <div class="container">
         <h1>شكرًا لدعمك المشروع! ☕</h1>
-        <p>يمكنك دعم تطوير التعريب عبر إرسال مساهمتك إلى المحفظة التالية:</p>
+        <p>يمكنك دعم تطوير التعريب عبر مسح الرمز أدناه أو إرسال مساهمتك إلى المحفظة:</p>
+        
+        <div class="qr-code">
+            <img src="qr.jpg" alt="مسح رمز QR للمحفظة">
+        </div>
         
         <div class="wallet-address">
             0x3a2570697b7a08df95f16d376ac5fbe927d2366c
