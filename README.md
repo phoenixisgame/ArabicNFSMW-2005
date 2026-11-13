@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # Need for Speed: Most Wanted (2005) - Arabic Localization
 
 <p align="center">
@@ -83,4 +79,3 @@ The goal is to make this legendary racing game more accessible and enjoyable for
   ❤️ شكرًا جزيلاً لكل من يدعم مشاريعنا ويشاركها مع أصدقائه!  
   <strong>Developed with passion by phoenixisgame</strong>
 </p>
-```
