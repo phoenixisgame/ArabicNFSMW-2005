@@ -2,33 +2,145 @@
 <html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>دعم مشروع ArabicNFSMW-2005</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعم مشروع تعريب Need for Speed: Most Wanted</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f6f8fa; }
-        .container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; max-width: 500px; line-height: 1.6; }
-        h1 { color: #24292e; }
-        .qr-code { margin: 20px auto; }
-        .qr-code img { max-width: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 10px; }
-        .wallet-address { background-color: #e8f0fe; padding: 15px; border: 1px solid #cce0ff; border-radius: 5px; font-family: monospace; font-size: 16px; margin: 20px 0; word-break: break-all; color: #0366d6; }
-        .warning { color: #d73a49; font-weight: bold; margin-top: 20px; font-size: 14px; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 40px 15px; 
+            background-color: #0f1218; 
+            color: #e1e4e8;
+        }
+        .container { 
+            background-color: #1a1e28; 
+            padding: 35px 25px; 
+            border-radius: 14px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5); 
+            display: inline-block; 
+            max-width: 480px; 
+            width: 100%;
+            line-height: 1.6; 
+            border: 1px solid #2d3342;
+        }
+        h1 { 
+            color: #f1c40f; 
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .qr-code { 
+            margin: 22px auto; 
+        }
+        .qr-code img { 
+            max-width: 210px; 
+            width: 100%;
+            background: #ffffff;
+            border: 2px solid #f1c40f; 
+            padding: 10px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .wallet-label {
+            font-size: 13px;
+            color: #8b949e;
+            margin-bottom: 6px;
+        }
+        .wallet-box {
+            position: relative;
+            background-color: #0d1117; 
+            border: 1px solid #30363d; 
+            border-radius: 8px; 
+            padding: 12px;
+            margin: 15px 0 20px 0;
+        }
+        .wallet-address { 
+            font-family: 'Consolas', 'Courier New', monospace; 
+            font-size: 14px; 
+            word-break: break-all; 
+            color: #58a6ff; 
+            user-select: all;
+        }
+        .copy-btn {
+            background-color: #f1c40f;
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.2s ease;
+        }
+        .copy-btn:hover {
+            background-color: #d4ac0d;
+        }
+        .network-badge {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #c9d1d9;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .network-badge strong {
+            color: #f1c40f;
+        }
+        .warning { 
+            background-color: rgba(248, 81, 73, 0.1);
+            border: 1px solid #f85149;
+            color: #ff7b72; 
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin-top: 20px; 
+            font-size: 13px; 
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>شكرًا لدعمك المشروع! ☕</h1>
-        <p>يمكنك دعم تطوير التعريب عبر مسح الرمز أدناه أو إرسال مساهمتك إلى المحفظة:</p>
+        <p>يمكنك دعم استمرارية وتطوير مشاريع التعريب عبر مسح الرمز أدناه أو التحويل إلى المحفظة:</p>
         
         <div class="qr-code">
-            <img src="qr.jpg" alt="مسح رمز QR للمحفظة">
+            <img src="qr.jpg" alt="RedotPay QR Code">
+        </div>
+
+        <div class="network-badge">
+            <strong>الشبكة المطلوبة:</strong> BNB Smart Chain (BEP20)
         </div>
         
-        <div class="wallet-address">
-            0x3a2570697b7a08df95f16d376ac5fbe927d2366c
+        <div class="wallet-label">عنوان المحفظة المعتمد (RedotPay):</div>
+        <div class="wallet-box">
+            <div class="wallet-address" id="walletAddr">0x2F8D26b67d8be078A2BE40c1887379232746fD79</div>
+            <button class="copy-btn" onclick="copyWallet()">📋 نسخ العنوان</button>
         </div>
         
-        <p><strong>الشبكة المطلوبة:</strong> BNB Smart Chain (BEP20)</p>
-        
-        <p class="warning">⚠️ تنبيه هام: يرجى التأكد من إرسال (USDT أو BNB) حصرياً عبر شبكة BEP20. الإرسال عبر شبكة أخرى قد يؤدي إلى فقدان الأصول.</p>
+        <div class="warning">
+            ⚠️ <strong>تنبيه هام:</strong> يرجى التأكد من إرسال (USDT أو BNB) عبر شبكة <strong>BEP20</strong> حصراً، والحد الأدنى للإيداع هو <strong>1.00 USDT</strong>.
+        </div>
     </div>
+
+    <script>
+        function copyWallet() {
+            const addr = document.getElementById('walletAddr').innerText;
+            navigator.clipboard.writeText(addr).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const orig = btn.innerText;
+                btn.innerText = "✓ تم النسخ بنجاح!";
+                btn.style.backgroundColor = "#2ea043";
+                btn.style.color = "#fff";
+                setTimeout(() => {
+                    btn.innerText = orig;
+                    btn.style.backgroundColor = "#f1c40f";
+                    btn.style.color = "#000";
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>
